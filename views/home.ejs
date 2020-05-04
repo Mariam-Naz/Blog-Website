@@ -1,0 +1,8 @@
+<%-include('partial/header')-%>
+<h1> Home </h1>
+<p><%=content_1%></p>
+<% blogPost.forEach(function(post){%>
+<h3><%=post.pT%></h3>
+<p><%=post.pB.slice(0,150)%>...<a href="/posts/<%=post.pT%>">>Read more</a></p>
+    <% });%>
+<%-include('partial/footer')-%>
